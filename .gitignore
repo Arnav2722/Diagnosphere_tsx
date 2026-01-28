@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+__pycache__
+
+kidney.ipynb
+liver_old
+kidney_old
+old_bcp
+pneumonia_graphs
+data
+static
+templates
+graphs
+test pics
+breast_cancer.csv
