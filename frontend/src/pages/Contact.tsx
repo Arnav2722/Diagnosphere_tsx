@@ -14,10 +14,10 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     toast.success("Message sent successfully! We'll get back to you soon.");
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
@@ -40,8 +40,8 @@ const Contact = () => {
               </span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Have questions about our diagnostic tools? Need help with the platform? 
-              We're here to help!
+              Have questions about our diagnostic tools? Need help with the
+              platform? We're here to help!
             </p>
           </motion.div>
         </div>
@@ -65,19 +65,11 @@ const Contact = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
-                      <Input
-                        id="firstName"
-                        placeholder="John"
-                        required
-                      />
+                      <Input id="firstName" placeholder="John" required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="lastName">Last Name</Label>
-                      <Input
-                        id="lastName"
-                        placeholder="Doe"
-                        required
-                      />
+                      <Input id="lastName" placeholder="Doe" required />
                     </div>
                   </div>
 
@@ -110,10 +102,10 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    variant="hero" 
-                    size="lg" 
+                  <Button
+                    type="submit"
+                    variant="hero"
+                    size="lg"
                     className="w-full"
                     disabled={isSubmitting}
                   >
@@ -142,8 +134,8 @@ const Contact = () => {
                   Contact Information
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Reach out to us through any of the following channels. 
-                  We typically respond within 24 hours.
+                  Reach out to us through any of the following channels. We
+                  typically respond within 24 hours.
                 </p>
               </div>
 
@@ -152,26 +144,26 @@ const Contact = () => {
                   {
                     icon: Mail,
                     label: "Email",
-                    value: "support@medidiag.com",
-                    href: "mailto:support@medidiag.com"
+                    value: "info.diagnosphere@gmail.com",
+                    href: "mailto:info.diagnosphere@gmail.com",
                   },
                   {
                     icon: Phone,
                     label: "Phone",
                     value: "+1 (555) 123-4567",
-                    href: "tel:+15551234567"
+                    href: "tel:+15551234567",
                   },
                   {
                     icon: MapPin,
                     label: "Address",
                     value: "123 Health Avenue, Medical District, NY 10001",
-                    href: null
+                    href: null,
                   },
                   {
                     icon: Clock,
                     label: "Hours",
                     value: "Monday - Friday: 9AM - 6PM EST",
-                    href: null
+                    href: null,
                   },
                 ].map((item) => (
                   <div
@@ -182,7 +174,9 @@ const Contact = () => {
                       <item.icon className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">{item.label}</div>
+                      <div className="text-sm text-muted-foreground">
+                        {item.label}
+                      </div>
                       {item.href ? (
                         <a
                           href={item.href}
@@ -209,7 +203,8 @@ const Contact = () => {
                       Need Quick Answers?
                     </h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Check our FAQ section for instant answers to common questions.
+                      Check our FAQ section for instant answers to common
+                      questions.
                     </p>
                     <Button variant="outline" size="sm">
                       View FAQ

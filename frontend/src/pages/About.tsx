@@ -1,25 +1,27 @@
 import { motion } from "framer-motion";
-import { Brain, Target, Users, Award, Github, Linkedin, Mail } from "lucide-react";
+import {
+  Brain,
+  Target,
+  Users,
+  Award,
+  Github,
+  Linkedin,
+  Mail,
+} from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 const team = [
   {
-    name: "Dr. Sarah Chen",
-    role: "Lead Data Scientist",
-    bio: "PhD in Machine Learning from Stanford. 10+ years in healthcare AI.",
-    avatar: "SC"
+    name: "Arnav Sharma",
+    role: "Aspiring ML Engineer",
+    bio: "BCA Graduate from Christ University, Delhi NCR Campus. Passionate about AI and healthcare.",
+    avatar: "SC",
   },
   {
-    name: "James Wilson",
-    role: "Full Stack Developer",
-    bio: "Expert in React and Python Flask. Former Google engineer.",
-    avatar: "JW"
-  },
-  {
-    name: "Dr. Priya Patel",
-    role: "Medical Advisor",
-    bio: "Board-certified physician with expertise in diagnostic medicine.",
-    avatar: "PP"
+    name: "Jahnvi Sharma",
+    role: "Aspiring Python Developer",
+    bio: "1st year BCA student at VIPS, Delhi. Enthusiastic about coding and problem-solving.",
+    avatar: "JW",
   },
 ];
 
@@ -27,22 +29,26 @@ const values = [
   {
     icon: Brain,
     title: "Innovation",
-    description: "Leveraging cutting-edge ML technologies to advance healthcare diagnostics."
+    description:
+      "Leveraging cutting-edge ML technologies to advance healthcare diagnostics.",
   },
   {
     icon: Target,
     title: "Accuracy",
-    description: "Rigorous model training and validation to ensure reliable predictions."
+    description:
+      "Rigorous model training and validation to ensure reliable predictions.",
   },
   {
     icon: Users,
     title: "Accessibility",
-    description: "Making advanced diagnostics available to everyone, everywhere."
+    description:
+      "Making advanced diagnostics available to everyone, everywhere.",
   },
   {
     icon: Award,
     title: "Trust",
-    description: "Transparent methodologies and continuous improvement of our models."
+    description:
+      "Transparent methodologies and continuous improvement of our models.",
   },
 ];
 
@@ -77,8 +83,8 @@ const About = () => {
               </span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              We're on a mission to democratize healthcare diagnostics using 
-              the power of artificial intelligence and machine learning.
+              We're on a mission to democratize healthcare diagnostics using the
+              power of artificial intelligence and machine learning.
             </p>
           </motion.div>
         </div>
@@ -101,19 +107,21 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  While humans are prone to errors, machines can provide consistent, 
-                  data-driven insights. MediDiag harnesses this potential to assist 
-                  in early disease detection, potentially saving lives through timely intervention.
+                  While humans are prone to errors, machines can provide
+                  consistent, data-driven insights. MediDiag harnesses this
+                  potential to assist in early disease detection, potentially
+                  saving lives through timely intervention.
                 </p>
                 <p>
-                  Our platform utilizes multiple machine learning algorithms including 
-                  Random Forest, Decision Trees, Logistic Regression, SVM, and deep learning 
-                  CNNs for image-based diagnoses.
+                  Our platform utilizes multiple machine learning algorithms
+                  including Random Forest, Decision Trees, Logistic Regression,
+                  SVM, and deep learning CNNs for image-based diagnoses.
                 </p>
                 <p>
-                  Trained on extensive datasets from Kaggle and UCI ML repositories, 
-                  our models achieve accuracy rates of up to 100% for certain conditions, 
-                  making them valuable tools for preliminary health screening.
+                  Trained on extensive datasets from Kaggle and UCI ML
+                  repositories, our models achieve accuracy rates of up to 100%
+                  for certain conditions, making them valuable tools for
+                  preliminary health screening.
                 </p>
               </div>
             </motion.div>
@@ -134,8 +142,12 @@ const About = () => {
                   className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors"
                 >
                   <value.icon className="h-8 w-8 text-primary mb-4" />
-                  <h3 className="font-display font-semibold mb-2">{value.title}</h3>
-                  <p className="text-sm text-muted-foreground">{value.description}</p>
+                  <h3 className="font-display font-semibold mb-2">
+                    {value.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {value.description}
+                  </p>
                 </motion.div>
               ))}
             </motion.div>
@@ -175,7 +187,7 @@ const About = () => {
               { name: "React", category: "Frontend" },
               { name: "TypeScript", category: "Language" },
               { name: "Tailwind CSS", category: "Styling" },
-              { name: "Supabase", category: "Database" },
+              { name: "Firebase", category: "Database" },
             ].map((tech) => (
               <motion.div
                 key={tech.name}
@@ -183,7 +195,9 @@ const About = () => {
                 className="p-4 rounded-xl bg-card border border-border text-center hover:border-primary/30 transition-colors"
               >
                 <div className="font-display font-semibold">{tech.name}</div>
-                <div className="text-xs text-muted-foreground">{tech.category}</div>
+                <div className="text-xs text-muted-foreground">
+                  {tech.category}
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -212,7 +226,7 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+            className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             {team.map((member) => (
               <motion.div
@@ -225,19 +239,30 @@ const About = () => {
                     {member.avatar}
                   </span>
                 </div>
-                <h3 className="font-display font-semibold text-lg">{member.name}</h3>
+                <h3 className="font-display font-semibold text-lg">
+                  {member.name}
+                </h3>
                 <div className="text-primary text-sm mb-2">{member.role}</div>
                 <p className="text-muted-foreground text-sm">{member.bio}</p>
                 <div className="flex items-center justify-center gap-3 mt-4">
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <Linkedin className="h-4 w-4" />
                   </a>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <Github className="h-4 w-4" />
                   </a>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  {/* <a
+                    href="#"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
                     <Mail className="h-4 w-4" />
-                  </a>
+                  </a> */}
                 </div>
               </motion.div>
             ))}
