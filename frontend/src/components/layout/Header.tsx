@@ -51,12 +51,17 @@ export function Header() {
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
-                className="p-2 rounded-xl bg-gradient-to-br from-primary to-accent"
+                className="p-2 rounded-xl"
+                // className="p-2 rounded-xl bg-gradient-to-br from-primary to-accent"
               >
-                <Activity className="h-5 w-5 text-primary-foreground" />
+                <img
+                  src="/diagnosphere.png"
+                  alt="Logo"
+                  className="h-10 w-10 object-contain"
+                />
               </motion.div>
-              <span className="font-display font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                DiagnoSphere
+              <span className="font-display font-bold text-[28px] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Diagnosphere
               </span>
             </Link>
 
@@ -93,9 +98,9 @@ export function Header() {
             <div className="flex items-center gap-2">
               <ThemeToggle />
               <div className="hidden md:flex items-center gap-2">
-                <Button variant="ghost" asChild>
+                {/* <Button variant="ghost" asChild>
                   <Link to="/login">Sign In</Link>
-                </Button>
+                </Button> */}
                 <Button variant="hero" asChild>
                   <Link to="/services">Get Started</Link>
                 </Button>
@@ -184,9 +189,9 @@ export function Header() {
                   transition={{ delay: navLinks.length * 0.05 }}
                   className="pt-4 space-y-2"
                 >
-                  <Button variant="outline" className="w-full" asChild>
+                  {/* <Button variant="outline" className="w-full" asChild>
                     <Link to="/login">Sign In</Link>
-                  </Button>
+                  </Button> */}
                   <Button variant="hero" className="w-full" asChild>
                     <Link to="/services">Get Started</Link>
                   </Button>

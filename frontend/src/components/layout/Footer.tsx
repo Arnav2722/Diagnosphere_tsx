@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { Activity, Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
+import {
+  Activity,
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Twitter,
+  Linkedin,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,16 +17,21 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="p-2 rounded-xl bg-gradient-to-br from-primary to-accent">
-                <Activity className="h-5 w-5 text-primary-foreground" />
+              <div className="p-2 rounded-xl">
+                {/* <div className="p-2 rounded-xl bg-gradient-to-br from-primary to-accent"> */}
+                <img
+                  src="/diagnosphere.png"
+                  alt="Logo"
+                  className="h-10 w-10 object-contain"
+                />
               </div>
-              <span className="font-display font-bold text-xl">
-                Medi<span className="text-primary">Diag</span>
+              <span className="font-display font-bold text-[25px] bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Diagnosphere
               </span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs">
-              AI-powered medical diagnosis platform using advanced machine learning 
-              for accurate health predictions.
+              AI-powered medical diagnosis platform using advanced machine
+              learning for accurate health predictions.
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -44,7 +57,9 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-display font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-display font-semibold text-foreground mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {["Home", "Services", "About", "Contact"].map((item) => (
                 <li key={item}>
@@ -61,9 +76,19 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-display font-semibold text-foreground mb-4">Diagnostics</h3>
+            <h3 className="font-display font-semibold text-foreground mb-4">
+              Diagnostics
+            </h3>
             <ul className="space-y-3">
-              {["Diabetes", "Heart Disease", "Kidney Disease", "Liver Disease", "Breast Cancer", "Malaria", "Pneumonia"].map((item) => (
+              {[
+                "Diabetes",
+                "Heart Disease",
+                "Kidney Disease",
+                "Liver Disease",
+                "Breast Cancer",
+                "Malaria",
+                "Pneumonia",
+              ].map((item) => (
                 <li key={item}>
                   <Link
                     to={`/diagnosis/${item.toLowerCase().replace(" ", "-")}`}
@@ -78,7 +103,9 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-display font-semibold text-foreground mb-4">Contact Us</h3>
+            <h3 className="font-display font-semibold text-foreground mb-4">
+              Contact Us
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Mail className="h-4 w-4 text-primary" />
@@ -86,28 +113,34 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9829632587</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" />
-                <span>123 Health Avenue, Medical District, NY 10001</span>
+                <span>New Delhi, India, 110049</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} MediDiag. All rights reserved.
+          <p className="text-muted-foreground text-sm ">
+            © {new Date().getFullYear()} Diagnosphere. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+          {/* <div className="flex items-center gap-6">
+            <Link
+              to="/privacy"
+              className="text-muted-foreground hover:text-primary transition-colors text-sm"
+            >
               Privacy Policy
             </Link>
-            <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+            <Link
+              to="/terms"
+              className="text-muted-foreground hover:text-primary transition-colors text-sm"
+            >
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
