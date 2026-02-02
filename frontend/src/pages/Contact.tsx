@@ -150,13 +150,13 @@ const Contact = () => {
                   {
                     icon: Phone,
                     label: "Phone",
-                    value: "+1 (555) 123-4567",
-                    href: "tel:+15551234567",
+                    value: "+91 9829632541",
+                    href: "tel:+919829632541",
                   },
                   {
                     icon: MapPin,
                     label: "Address",
-                    value: "123 Health Avenue, Medical District, NY 10001",
+                    value: "New Delhi, India, 110049",
                     href: null,
                   },
                   {
