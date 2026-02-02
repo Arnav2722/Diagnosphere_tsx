@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Shield, Clock, Users, Activity, Heart, Droplets, Stethoscope, Microscope, Wind, Scan } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
-import heroBg from "@/assets/hero-bg.jpg";
+// import heroBg from "@/assets/hero-bg.jpg";
 
 const diseases = [
   { name: "Diabetes", icon: Droplets, accuracy: "74.03%", color: "from-blue-500 to-cyan-500", slug: "diabetes" },
@@ -49,11 +49,11 @@ const Index = () => {
         {/* Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/80 z-10" />
-          <img
+          {/* <img
             src={heroBg}
             alt="Medical technology background"
             className="w-full h-full object-cover opacity-30 dark:opacity-20"
-          />
+          /> */}
           {/* Animated gradient orbs */}
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "2s" }} />
