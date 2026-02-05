@@ -1,4 +1,4 @@
-# Diagnosphere | A ML Based Web Application
+<!-- # Diagnosphere | A ML Based Web Application
 
 ![Pyhon 3.4](https://img.shields.io/badge/ide-Jupyter_notebook-blue.svg) ![Python](https://img.shields.io/badge/Language-Python-brightgreen.svg) ![Frontend](https://img.shields.io/badge/Frontend-Bootstrap-purple.svg)
 
@@ -111,9 +111,6 @@ This webapp was developed using Flask Web Framework. The models used to predict 
 | Malaria        | Deep Learning Model(CNN) | 94.78%   |
 | Pneumonia      | Deep Learning Model(CNN) | 95%      |
 
-<!-- **NOTE**
-<br>
-==> Python version 3.6.8 was used for the whole project.<br> -->
 
 **Dataset Links**
 All the datasets were used from kaggle and drive.
@@ -121,13 +118,97 @@ All the datasets were used from kaggle and drive.
 - [CSV Dataset](https://www.kaggle.com/datasets/arnav22215027/diagnosphere-csv-dataset)
 - [Image Dataset](https://drive.google.com/drive/folders/1INwJbORQ4vTgcD-nTVLG1_vUfPLDzwBD?usp=sharing)
 
-<!-- - [Diabetes Dataset](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
-- [Breast Cancer Dataset](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
-- [Heart Disease Dataset](https://www.kaggle.com/ronitf/heart-disease-uci)
-- [Kidney Disease Dataset](https://www.kaggle.com/mansoordaku/ckdisease)
-- [Liver Disease Dataset](https://www.kaggle.com/uciml/indian-liver-patient-records) -->
-
 ## Team
 
 [Arnav Sharma](https://github.com/Arnav2722) <br>
-[Jahnvi Sharma](https://github.com/jahnvi02-star)
+[Jahnvi Sharma](https://github.com/jahnvi02-star) -->
+
+
+
+# 🩺 Diagnosphere
+
+Diagnosphere is a modern **TypeScript + React (TSX)** based application focused on building an intuitive and scalable healthcare/diagnostics-related interface. The project is designed with clean architecture, reusable components, and a strong emphasis on maintainability and user experience.
+
+---
+
+## ✨ Features
+
+- ⚛️ Built with **React + TypeScript (TSX)**
+- 🎨 Modular and reusable UI components
+- 📱 Responsive design for multiple screen sizes
+- 🧩 Scalable project structure
+- 🚀 Optimized for performance and readability
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, TypeScript (TSX)
+- **Styling:** CSS / Tailwind / Styled Components *(depending on your setup)*
+- **Tooling:** Vite / CRA / npm / yarn
+- **Version Control:** Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+Diagnosphere_tsx/
+│── src/
+│ ├── components/
+│ ├── pages/
+│ ├── assets/
+│ ├── App.tsx
+│ └── main.tsx
+│
+│── public/
+│── package.json
+│── tsconfig.json
+│── README.md
+
+
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Arnav2722/Diagnosphere_tsx.git
+cd Diagnosphere_tsx
+npm install
+npm run dev
+```
+
+The app should now be running on http://localhost:5173 (or the configured port).
+
+### Future Improvements
+
+🔐 Authentication & authorization
+
+🧪 Unit and integration testing
+
+🌐 API integration
+
+📊 Advanced data visualization
+
+♿ Accessibility enhancements
+
+
+### Contributing
+
+Contributions are welcome!
+Feel free to fork the repository, create a feature branch, and submit a pull request.
+
+
+### ⭐ If you like this project, don’t forget to give it a star!
+
+
+---
+
+If you want, I can:
+- Customize it **exactly** to your app’s purpose  
+- Add **badges** (build, license, tech stack)  
+- Rewrite it in a **more minimal or more professional** style  
+- Auto-generate READMEs like this for all your projects 🚀
