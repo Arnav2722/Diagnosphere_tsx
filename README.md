@@ -203,12 +203,3 @@ Feel free to fork the repository, create a feature branch, and submit a pull req
 
 
 ### ⭐ If you like this project, don’t forget to give it a star!
-
-
----
-
-If you want, I can:
-- Customize it **exactly** to your app’s purpose  
-- Add **badges** (build, license, tech stack)  
-- Rewrite it in a **more minimal or more professional** style  
-- Auto-generate READMEs like this for all your projects 🚀
