@@ -123,8 +123,6 @@ All the datasets were used from kaggle and drive.
 [Arnav Sharma](https://github.com/Arnav2722) <br>
 [Jahnvi Sharma](https://github.com/jahnvi02-star) -->
 
-
-
 # 🩺 Diagnosphere
 
 Diagnosphere is a modern **TypeScript + React (TSX)** based application focused on building an intuitive and scalable healthcare/diagnostics-related interface. The project is designed with clean architecture, reusable components, and a strong emphasis on maintainability and user experience.
@@ -144,26 +142,38 @@ Diagnosphere is a modern **TypeScript + React (TSX)** based application focused 
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, TypeScript (TSX)
-- **Styling:** CSS / Tailwind / Styled Components *(depending on your setup)*
+- **Styling:** CSS / Tailwind / Styled Components _(depending on your setup)_
 - **Tooling:** Vite / CRA / npm / yarn
 - **Version Control:** Git & GitHub
 
 ---
 
 ## 📂 Project Structure
+
 ```
 Diagnosphere_tsx/
-│── src/
-│ ├── components/
-│ ├── pages/
-│ ├── assets/
-│ ├── App.tsx
-│ └── main.tsx
+│── backend/
+│ ├── models/
+│ ├── Python Notebooks/
+│ ├── app.py
+│ ├── requirements.txt
 │
-│── public/
-│── package.json
-│── tsconfig.json
+│── frontend/
+│ ├── public/
+│ ├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
+│   ├── pages/
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│ ├── package.json
+│ ├── index.html
 │── README.md
+
 
 ```
 
@@ -174,14 +184,20 @@ Diagnosphere_tsx/
 Follow these steps to run the project locally:
 
 ### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/Arnav2722/Diagnosphere_tsx.git
 cd Diagnosphere_tsx
+cd frontend
 npm install
 npm run dev
+cd ..
+cd backend
+pip install -r requirements.txt
+python app.py or flask run
 ```
 
-The app should now be running on http://localhost:5173 (or the configured port).
+The frontend should be running on port 5173 , and the backend on port 5000 (If backend port is different, then change it in the code also).
 
 ### Future Improvements
 
@@ -195,11 +211,9 @@ The app should now be running on http://localhost:5173 (or the configured port).
 
 ♿ Accessibility enhancements
 
-
 ### Contributing
 
 Contributions are welcome!
 Feel free to fork the repository, create a feature branch, and submit a pull request.
-
 
 ### ⭐ If you like this project, don’t forget to give it a star!
