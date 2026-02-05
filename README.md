@@ -151,7 +151,7 @@ Diagnosphere is a modern **TypeScript + React (TSX)** based application focused 
 ---
 
 ## 📂 Project Structure
-
+```
 Diagnosphere_tsx/
 │── src/
 │ ├── components/
@@ -165,7 +165,7 @@ Diagnosphere_tsx/
 │── tsconfig.json
 │── README.md
 
-
+```
 
 ---
 
