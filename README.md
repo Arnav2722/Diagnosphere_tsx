@@ -199,6 +199,10 @@ python app.py or flask run
 
 The frontend should be running on port 5173 , and the backend on port 5000 (If backend port is different, then change it in the code also).
 
+### Deployment
+
+The project is deployed using Render Dashboard. Make sure to set up environment variables and configurations properly for deployment.
+
 ### Future Improvements
 
 🔐 Authentication & authorization
