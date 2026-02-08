@@ -205,15 +205,17 @@ The project is deployed using Render Dashboard. Make sure to set up environment 
 
 ### Future Improvements
 
-🔐 Authentication & authorization
+- Authentication & authorization
 
-🧪 Unit and integration testing
+- Addition to Disease Prediction (ECG Reader, etc.)
 
-🌐 API integration
+- Unit and integration testing
 
-📊 Advanced data visualization
+- API integration
 
-♿ Accessibility enhancements
+- Advanced data visualization
+
+- Accessibility enhancements
 
 ### Contributing
 
