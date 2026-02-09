@@ -1,18 +1,73 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Brain, Shield, Clock, Users, Activity, Heart, Droplets, Stethoscope, Microscope, Wind, Scan } from "lucide-react";
+import {
+  ArrowRight,
+  Brain,
+  Shield,
+  Clock,
+  Users,
+  Activity,
+  Heart,
+  Droplets,
+  Stethoscope,
+  Microscope,
+  Wind,
+  Scan,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 // import heroBg from "@/assets/hero-bg.jpg";
 
 const diseases = [
-  { name: "Diabetes", icon: Droplets, accuracy: "74.03%", color: "from-blue-500 to-cyan-500", slug: "diabetes" },
-  { name: "Breast Cancer", icon: Scan, accuracy: "96.49%", color: "from-pink-500 to-rose-500", slug: "breast-cancer" },
-  { name: "Heart Disease", icon: Heart, accuracy: "100%", color: "from-red-500 to-orange-500", slug: "heart-disease" },
-  { name: "Kidney Disease", icon: Activity, accuracy: "96.88%", color: "from-purple-500 to-violet-500", slug: "kidney-disease" },
-  { name: "Liver Disease", icon: Stethoscope, accuracy: "77.97%", color: "from-amber-500 to-yellow-500", slug: "liver-disease" },
-  { name: "Malaria", icon: Microscope, accuracy: "94.78%", color: "from-green-500 to-emerald-500", slug: "malaria" },
-  { name: "Pneumonia", icon: Wind, accuracy: "95%", color: "from-sky-500 to-indigo-500", slug: "pneumonia" },
+  {
+    name: "Diabetes",
+    icon: Droplets,
+    accuracy: "74.03%",
+    color: "from-blue-500 to-cyan-500",
+    slug: "diabetes",
+  },
+  {
+    name: "Breast Cancer",
+    icon: Scan,
+    accuracy: "96.49%",
+    color: "from-pink-500 to-rose-500",
+    slug: "breast-cancer",
+  },
+  {
+    name: "Heart Disease",
+    icon: Heart,
+    accuracy: "100%",
+    color: "from-red-500 to-orange-500",
+    slug: "heart-disease",
+  },
+  {
+    name: "Kidney Disease",
+    icon: Activity,
+    accuracy: "96.88%",
+    color: "from-purple-500 to-violet-500",
+    slug: "kidney-disease",
+  },
+  {
+    name: "Liver Disease",
+    icon: Stethoscope,
+    accuracy: "77.97%",
+    color: "from-amber-500 to-yellow-500",
+    slug: "liver-disease",
+  },
+  {
+    name: "Malaria",
+    icon: Microscope,
+    accuracy: "94.78%",
+    color: "from-green-500 to-emerald-500",
+    slug: "malaria",
+  },
+  {
+    name: "Pneumonia",
+    icon: Wind,
+    accuracy: "95%",
+    color: "from-sky-500 to-indigo-500",
+    slug: "pneumonia",
+  },
 ];
 
 const stats = [
@@ -55,8 +110,12 @@ const Index = () => {
             className="w-full h-full object-cover opacity-30 dark:opacity-20"
           /> */}
           {/* Animated gradient orbs */}
+          {/* ibfuibfoibf */}
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "2s" }} />
+          <div
+            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-slow"
+            style={{ animationDelay: "2s" }}
+          />
         </div>
 
         <div className="container mx-auto px-4 relative z-20">
@@ -88,9 +147,9 @@ const Index = () => {
               variants={itemVariants}
               className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
             >
-              Advanced machine learning models analyze your medical data to detect 
-              diseases early. Get accurate predictions for diabetes, heart disease, 
-              cancer, and more.
+              Advanced machine learning models analyze your medical data to
+              detect diseases early. Get accurate predictions for diabetes,
+              heart disease, cancer, and more.
             </motion.p>
 
             <motion.div
@@ -123,7 +182,9 @@ const Index = () => {
                   <div className="font-display text-2xl md:text-3xl font-bold text-foreground">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
@@ -164,7 +225,7 @@ const Index = () => {
               Comprehensive Disease Detection
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our ML models are trained on extensive medical datasets to provide 
+              Our ML models are trained on extensive medical datasets to provide
               accurate predictions for various health conditions.
             </p>
           </motion.div>
@@ -191,7 +252,9 @@ const Index = () => {
                     {disease.name}
                   </h3>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">Detection</span>
+                    <span className="text-sm text-muted-foreground">
+                      Detection
+                    </span>
                     <span className="text-sm font-semibold text-primary">
                       {disease.accuracy} Accuracy
                     </span>
@@ -243,19 +306,22 @@ const Index = () => {
               {
                 step: "01",
                 title: "Enter Your Data",
-                description: "Fill in your medical parameters such as blood pressure, glucose levels, etc.",
+                description:
+                  "Fill in your medical parameters such as blood pressure, glucose levels, etc.",
                 icon: "📝",
               },
               {
                 step: "02",
                 title: "AI Analysis",
-                description: "Our ML models analyze your data using advanced algorithms trained on medical datasets.",
+                description:
+                  "Our ML models analyze your data using advanced algorithms trained on medical datasets.",
                 icon: "🤖",
               },
               {
                 step: "03",
                 title: "Get Results",
-                description: "Receive instant predictions and recommendations. Book a doctor consultation if needed.",
+                description:
+                  "Receive instant predictions and recommendations. Book a doctor consultation if needed.",
                 icon: "📊",
               },
             ].map((item, index) => (
@@ -302,8 +368,8 @@ const Index = () => {
               Ready to Check Your Health?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Get started with our AI-powered diagnostics today. It's fast, accurate, 
-              and could potentially save your life.
+              Get started with our AI-powered diagnostics today. It's fast,
+              accurate, and could potentially save your life.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="hero" size="xl" asChild>
