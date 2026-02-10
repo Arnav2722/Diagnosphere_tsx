@@ -98,6 +98,8 @@ This webapp was developed using Flask Web Framework. The models used to predict 
 | Malaria        | Deep Learning Model(CNN) | 94.78%   |
 | Pneumonia      | Deep Learning Model(CNN) | 95%      |
 
+---
+
 ### Deployment
 
 The project is deployed using Render Dashboard. Make sure to set up environment variables and configurations properly for deployment.
@@ -107,6 +109,8 @@ All the datasets were used from kaggle and drive.
 
 - [CSV Dataset](https://www.kaggle.com/datasets/arnav22215027/diagnosphere-csv-dataset)
 - [Image Dataset](https://drive.google.com/drive/folders/1INwJbORQ4vTgcD-nTVLG1_vUfPLDzwBD?usp=sharing)
+
+---
 
 ### Future Improvements
 
@@ -121,6 +125,8 @@ All the datasets were used from kaggle and drive.
 - Advanced data visualization
 
 - Accessibility enhancements
+
+---
 
 ### Contributing
 
