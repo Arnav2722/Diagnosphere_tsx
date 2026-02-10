@@ -86,6 +86,7 @@ const containerVariants = {
     },
   },
 };
+// fkhbifob
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -110,7 +111,6 @@ const Index = () => {
             className="w-full h-full object-cover opacity-30 dark:opacity-20"
           /> */}
           {/* Animated gradient orbs */}
-          {/* ibfuibfoibf */}
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
           <div
             className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse-slow"
