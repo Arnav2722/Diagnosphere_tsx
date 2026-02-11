@@ -105,7 +105,7 @@ This webapp was developed using Flask Web Framework. The models used to predict 
 The project is deployed using Render Dashboard. Make sure to set up environment variables and configurations properly for deployment.
 
 **Dataset Links**
-All the datasets were used from kaggle and drive.
+All the datasets were used from Kaggle and Google drive.
 
 - [CSV Dataset](https://www.kaggle.com/datasets/arnav22215027/diagnosphere-csv-dataset)
 - [Image Dataset](https://drive.google.com/drive/folders/1INwJbORQ4vTgcD-nTVLG1_vUfPLDzwBD?usp=sharing)
