@@ -508,7 +508,6 @@ const DiagnosisPage = () => {
 
   const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
-  // Cleanup effect for image previews
   useEffect(() => {
     return () => {
       if (imagePreview) URL.revokeObjectURL(imagePreview);
