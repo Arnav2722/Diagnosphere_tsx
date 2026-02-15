@@ -79,7 +79,7 @@ const About = () => {
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               About{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                MediDiag
+                Diagnosphere
               </span>
             </h1>
             <p className="text-lg text-muted-foreground">
