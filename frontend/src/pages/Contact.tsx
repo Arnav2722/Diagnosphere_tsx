@@ -159,12 +159,12 @@ const Contact = () => {
                     value: "New Delhi, India, 110049",
                     href: null,
                   },
-                  {
-                    icon: Clock,
-                    label: "Hours",
-                    value: "Monday - Friday: 9AM - 6PM EST",
-                    href: null,
-                  },
+                  // {
+                  //   icon: Clock,
+                  //   label: "Hours",
+                  //   value: "Monday - Friday: 9AM - 6PM EST",
+                  //   href: null,
+                  // },
                 ].map((item) => (
                   <div
                     key={item.label}
