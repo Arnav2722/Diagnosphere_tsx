@@ -92,7 +92,7 @@ This webapp was developed using Flask Web Framework. The models used to predict 
 | -------------- | ------------------------ | -------- |
 | Diabetes       | Machine Learning Model   | 74.03%   |
 | Breast Cancer  | Machine Learning Model   | 96.49%   |
-| Heart Disease  | Machine Learning Model   | 100%     |
+| Heart Disease  | Machine Learning Model   | 81.9%    |
 | Kidney Disease | Machine Learning Model   | 96.88%   |
 | Liver Disease  | Machine Learning Model   | 77.97%   |
 | Malaria        | Deep Learning Model(CNN) | 94.78%   |
