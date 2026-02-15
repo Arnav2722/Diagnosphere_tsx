@@ -22,7 +22,7 @@ const diseases = [
   {
     name: "Diabetes",
     icon: Droplets,
-    accuracy: "74.03%",
+    accuracy: "75.40%",
     color: "from-blue-500 to-cyan-500",
     slug: "diabetes",
   },
@@ -36,43 +36,43 @@ const diseases = [
   {
     name: "Heart Disease",
     icon: Heart,
-    accuracy: "100%",
+    accuracy: "83.6%",
     color: "from-red-500 to-orange-500",
     slug: "heart-disease",
   },
   {
     name: "Kidney Disease",
     icon: Activity,
-    accuracy: "96.88%",
+    accuracy: "93.75%",
     color: "from-purple-500 to-violet-500",
     slug: "kidney-disease",
   },
   {
     name: "Liver Disease",
     icon: Stethoscope,
-    accuracy: "77.97%",
+    accuracy: "73.71%",
     color: "from-amber-500 to-yellow-500",
     slug: "liver-disease",
   },
   {
     name: "Malaria",
     icon: Microscope,
-    accuracy: "94.78%",
+    accuracy: "95.26%",
     color: "from-green-500 to-emerald-500",
     slug: "malaria",
   },
   {
     name: "Pneumonia",
     icon: Wind,
-    accuracy: "95%",
+    accuracy: "89%",
     color: "from-sky-500 to-indigo-500",
     slug: "pneumonia",
   },
 ];
 
 const stats = [
-  { value: "7+", label: "Disease Types", icon: Brain },
-  { value: "95%", label: "Avg Accuracy", icon: Shield },
+  { value: "5+", label: "Disease Types", icon: Brain },
+  { value: "87.13%", label: "Avg Accuracy", icon: Shield },
   { value: "24/7", label: "Available", icon: Clock },
   { value: "10K+", label: "Predictions", icon: Users },
 ];

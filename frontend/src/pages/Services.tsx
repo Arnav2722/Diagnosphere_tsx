@@ -1,104 +1,123 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight, 
-  Droplets, 
-  Scan, 
-  Heart, 
-  Activity, 
-  Stethoscope, 
-  Microscope, 
+import {
+  ArrowRight,
+  Droplets,
+  Scan,
+  Heart,
+  Activity,
+  Stethoscope,
+  Microscope,
   Wind,
   Brain,
-  Info
+  Info,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 
 const diseases = [
-  { 
-    name: "Diabetes", 
-    icon: Droplets, 
-    accuracy: "74.03%", 
+  {
+    name: "Diabetes",
+    icon: Droplets,
+    accuracy: "75.4%",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-500/10",
     borderColor: "border-blue-500/20",
     slug: "diabetes",
     model: "Random Forest, Logistic Regression",
-    description: "Predict diabetes based on glucose levels, BMI, age, and other health indicators.",
-    features: ["Glucose Level", "Blood Pressure", "BMI", "Age", "Insulin"]
+    description:
+      "Predict diabetes based on glucose levels, BMI, age, and other health indicators.",
+    features: ["Glucose Level", "Blood Pressure", "BMI", "Age", "Insulin"],
   },
-  { 
-    name: "Breast Cancer", 
-    icon: Scan, 
-    accuracy: "96.49%", 
+  {
+    name: "Breast Cancer",
+    icon: Scan,
+    accuracy: "96.49%",
     color: "from-pink-500 to-rose-500",
     bgColor: "bg-pink-500/10",
     borderColor: "border-pink-500/20",
     slug: "breast-cancer",
     model: "SVM, Decision Tree",
-    description: "Analyze cell features to detect malignant or benign breast tumors.",
-    features: ["Cell Radius", "Texture", "Perimeter", "Area", "Smoothness"]
+    description:
+      "Analyze cell features to detect malignant or benign breast tumors.",
+    features: ["Cell Radius", "Texture", "Perimeter", "Area", "Smoothness"],
   },
-  { 
-    name: "Heart Disease", 
-    icon: Heart, 
-    accuracy: "100%", 
+  {
+    name: "Heart Disease",
+    icon: Heart,
+    accuracy: "83.6%",
     color: "from-red-500 to-orange-500",
     bgColor: "bg-red-500/10",
     borderColor: "border-red-500/20",
     slug: "heart-disease",
     model: "Random Forest, SVM",
-    description: "Evaluate cardiovascular health using key vital signs and test results.",
-    features: ["Chest Pain", "Blood Pressure", "Cholesterol", "Heart Rate", "ECG"]
+    description:
+      "Evaluate cardiovascular health using key vital signs and test results.",
+    features: [
+      "Chest Pain",
+      "Blood Pressure",
+      "Cholesterol",
+      "Heart Rate",
+      "ECG",
+    ],
   },
-  { 
-    name: "Kidney Disease", 
-    icon: Activity, 
-    accuracy: "96.88%", 
+  {
+    name: "Kidney Disease",
+    icon: Activity,
+    accuracy: "93.75%",
     color: "from-purple-500 to-violet-500",
     bgColor: "bg-purple-500/10",
     borderColor: "border-purple-500/20",
     slug: "kidney-disease",
     model: "Decision Tree, Random Forest",
-    description: "Detect chronic kidney disease through blood and urine analysis markers.",
-    features: ["Blood Pressure", "Albumin", "Sugar", "Blood Urea", "Creatinine"]
+    description:
+      "Detect chronic kidney disease through blood and urine analysis markers.",
+    features: [
+      "Blood Pressure",
+      "Albumin",
+      "Sugar",
+      "Blood Urea",
+      "Creatinine",
+    ],
   },
-  { 
-    name: "Liver Disease", 
-    icon: Stethoscope, 
-    accuracy: "77.97%", 
+  {
+    name: "Liver Disease",
+    icon: Stethoscope,
+    accuracy: "73.71%",
     color: "from-amber-500 to-yellow-500",
     bgColor: "bg-amber-500/10",
     borderColor: "border-amber-500/20",
     slug: "liver-disease",
     model: "Logistic Regression, SVM",
-    description: "Assess liver function using enzyme levels and protein ratios.",
-    features: ["Bilirubin", "Proteins", "Albumin", "Enzymes", "A/G Ratio"]
+    description:
+      "Assess liver function using enzyme levels and protein ratios.",
+    features: ["Bilirubin", "Proteins", "Albumin", "Enzymes", "A/G Ratio"],
   },
-  { 
-    name: "Malaria", 
-    icon: Microscope, 
-    accuracy: "94.78%", 
+  {
+    name: "Malaria",
+    icon: Microscope,
+    accuracy: "95.26%",
     color: "from-green-500 to-emerald-500",
     bgColor: "bg-green-500/10",
     borderColor: "border-green-500/20",
     slug: "malaria",
     model: "CNN (Deep Learning)",
-    description: "Analyze cell images to detect malaria parasites with high accuracy.",
-    features: ["Cell Image", "Parasite Detection", "Cell Morphology"]
+    description:
+      "Analyze cell images to detect malaria parasites with high accuracy.",
+    features: ["Cell Image", "Parasite Detection", "Cell Morphology"],
   },
-  { 
-    name: "Pneumonia", 
-    icon: Wind, 
-    accuracy: "95%", 
+  {
+    name: "Pneumonia",
+    icon: Wind,
+    accuracy: "89%",
     color: "from-sky-500 to-indigo-500",
     bgColor: "bg-sky-500/10",
     borderColor: "border-sky-500/20",
     slug: "pneumonia",
     model: "CNN (Deep Learning)",
-    description: "Detect pneumonia from chest X-ray images using deep learning.",
-    features: ["Chest X-Ray", "Lung Opacity", "Consolidation Detection"]
+    description:
+      "Detect pneumonia from chest X-ray images using deep learning.",
+    features: ["Chest X-Ray", "Lung Opacity", "Consolidation Detection"],
   },
 ];
 
@@ -141,8 +160,8 @@ const Services = () => {
               </span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Select from our range of AI-powered diagnostic tools. Each model is 
-              trained on extensive medical datasets for accurate predictions.
+              Select from our range of AI-powered diagnostic tools. Each model
+              is trained on extensive medical datasets for accurate predictions.
             </p>
           </motion.div>
         </div>
@@ -177,11 +196,13 @@ const Services = () => {
                         <h3 className="font-display text-xl md:text-2xl font-semibold group-hover:text-primary transition-colors">
                           {disease.name} Detection
                         </h3>
-                        <span className={`px-3 py-1 rounded-full ${disease.bgColor} text-xs font-semibold`}>
+                        <span
+                          className={`px-3 py-1 rounded-full ${disease.bgColor} text-xs font-semibold`}
+                        >
                           {disease.accuracy} Accuracy
                         </span>
                       </div>
-                      
+
                       <p className="text-muted-foreground mb-4">
                         {disease.description}
                       </p>
@@ -235,9 +256,10 @@ const Services = () => {
                   Important Disclaimer
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  These predictions are based on machine learning models and should not replace 
-                  professional medical advice. While our models achieve high accuracy rates, 
-                  they are meant for preliminary screening only. Always consult with a qualified 
+                  These predictions are based on machine learning models and
+                  should not replace professional medical advice. While our
+                  models achieve high accuracy rates, they are meant for
+                  preliminary screening only. Always consult with a qualified
                   healthcare professional for proper diagnosis and treatment.
                 </p>
               </div>

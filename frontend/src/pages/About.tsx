@@ -16,12 +16,16 @@ const team = [
     role: "Aspiring ML Engineer",
     bio: "BCA Graduate from Christ University, Delhi NCR Campus. Passionate about AI and healthcare.",
     avatar: "AS",
+    ghlink: "https://github.com/Arnav2722/",
+    linkedin: "https://www.linkedin.com/in/arnav2722/",
   },
   {
     name: "Jahnvi Sharma",
     role: "Aspiring Python Developer",
     bio: "1st year BCA student at VIPS, Delhi. Enthusiastic about coding and problem-solving.",
     avatar: "JS",
+    ghlink: "https://github.com/jahnvi02-star",
+    linkedin: "https://www.linkedin.com/in/jahnvi-sharma-325185317/",
   },
 ];
 
