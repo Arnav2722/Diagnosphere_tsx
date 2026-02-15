@@ -33,24 +33,24 @@ export function Footer() {
               AI-powered medical diagnosis platform using advanced machine
               learning for accurate health predictions.
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 ml-24">
               <a
-                href="#"
+                href="https://github.com/Arnav2722/"
                 className="p-2 rounded-lg bg-secondary hover:bg-primary/10 hover:text-primary transition-colors"
               >
                 <Github className="h-4 w-4" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="p-2 rounded-lg bg-secondary hover:bg-primary/10 hover:text-primary transition-colors"
               >
                 <Twitter className="h-4 w-4" />
-              </a>
+              </a> */}
               <a
-                href="#"
+                href="https://github.com/jahnvi02-star"
                 className="p-2 rounded-lg bg-secondary hover:bg-primary/10 hover:text-primary transition-colors"
               >
-                <Linkedin className="h-4 w-4" />
+                <Github className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -61,7 +61,7 @@ export function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-3">
-              {["Home", "Services", "About", "Contact"].map((item) => (
+              {["Home", "Services", "About"].map((item) => (
                 <li key={item}>
                   <Link
                     to={item === "Home" ? "/" : `/${item.toLowerCase()}`}

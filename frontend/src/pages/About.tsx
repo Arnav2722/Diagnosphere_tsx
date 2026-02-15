@@ -15,13 +15,13 @@ const team = [
     name: "Arnav Sharma",
     role: "Aspiring ML Engineer",
     bio: "BCA Graduate from Christ University, Delhi NCR Campus. Passionate about AI and healthcare.",
-    avatar: "SC",
+    avatar: "AS",
   },
   {
     name: "Jahnvi Sharma",
     role: "Aspiring Python Developer",
     bio: "1st year BCA student at VIPS, Delhi. Enthusiastic about coding and problem-solving.",
-    avatar: "JW",
+    avatar: "JS",
   },
 ];
 
@@ -187,7 +187,8 @@ const About = () => {
               { name: "React", category: "Frontend" },
               { name: "TypeScript", category: "Language" },
               { name: "Tailwind CSS", category: "Styling" },
-              { name: "Firebase", category: "Database" },
+              // { name: "Firebase", category: "Database" },
+              { name: "Git", category: "Version Control" },
             ].map((tech) => (
               <motion.div
                 key={tech.name}
